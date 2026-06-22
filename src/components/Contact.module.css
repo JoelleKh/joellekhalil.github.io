@@ -1,0 +1,150 @@
+.section {
+  background: var(--bg);
+  padding: 5rem 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+/* Info column */
+.infoHeading {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 0.01em;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.infoText {
+  font-size: 0.9rem;
+  color: var(--body);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.87rem;
+  color: var(--body);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:first-child { border-top: 1px solid var(--border); }
+.link:hover { color: var(--white); }
+
+.linkLabel {}
+
+.linkType {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.field label {
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.field input,
+.field textarea {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: none;
+  border-radius: 0;
+}
+
+.field input::placeholder,
+.field textarea::placeholder { color: var(--muted); }
+
+.field input:focus,
+.field textarea:focus { border-color: var(--border2); }
+
+.submit {
+  background: var(--white);
+  color: var(--bg);
+  border: none;
+  padding: 0.8rem 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+.submit:hover:not(:disabled) { background: var(--accent); }
+.submit:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.statusMsg {
+  font-size: 0.83rem;
+  padding: 0.7rem 1rem;
+}
+
+.success {
+  border: 1px solid rgba(100, 200, 120, 0.3);
+  color: #6dc880;
+}
+
+.error {
+  border: 1px solid rgba(220, 80, 80, 0.3);
+  color: #e07070;
+}
+
+@media (max-width: 900px) {
+  .section { padding: 4rem 1.5rem; }
+  .grid { grid-template-columns: 1fr; gap: 3rem; }
+  .formRow { grid-template-columns: 1fr; }
+}

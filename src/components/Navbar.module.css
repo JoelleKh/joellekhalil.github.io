@@ -1,0 +1,79 @@
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+    transition: background 0.25s ease;
+}
+
+.logo {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.links a {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.links a:hover {
+    color: var(--white);
+}
+
+/* Theme toggle button */
+.themeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--border2);
+    background: transparent;
+    color: var(--dim);
+    cursor: pointer;
+    transition:
+        color 0.2s,
+        border-color 0.2s,
+        background 0.2s;
+    flex-shrink: 0;
+}
+
+.themeBtn:hover {
+    color: var(--white);
+    border-color: var(--border2);
+    background: var(--bg3);
+}
+
+.themeBtn:focus-visible {
+    outline: 2px solid var(--amber);
+    outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+    .nav {
+        padding: 0 1.5rem;
+    }
+    .links {
+        display: none;
+    }
+}

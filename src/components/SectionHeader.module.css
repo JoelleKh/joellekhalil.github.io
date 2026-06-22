@@ -1,0 +1,31 @@
+.wrapper {
+  margin-bottom: 3.5rem;
+}
+
+.eye {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+
+.eye::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.head {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  text-transform: uppercase;
+}

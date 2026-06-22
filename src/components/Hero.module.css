@@ -1,0 +1,222 @@
+.hero {
+    border-bottom: 1px solid var(--border);
+}
+
+/* ── Name row ── */
+.nameRow {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    border-bottom: 1px solid var(--border);
+}
+
+.nameBlock {
+    padding: 4rem 3rem 3rem;
+    border-right: 1px solid var(--border);
+}
+
+.eyebrow {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--dim);
+    margin-bottom: 2rem;
+}
+
+.name {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(5rem, 12vw, 9.5rem);
+    font-weight: 700;
+    line-height: 0.88;
+    letter-spacing: -0.02em;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.nameAccent {
+    color: var(--accent);
+}
+
+/* ── Photo ── */
+.photoWrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+    background: var(--bg2);
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    filter: grayscale(15%);
+}
+
+/* ── Bottom row ── */
+.bottomRow {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+}
+
+.bioCol {
+    padding: 2.5rem 3rem;
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.title {
+    font-size: 0.97rem;
+    color: var(--body);
+    line-height: 1.8;
+    max-width: 520px;
+}
+
+.title strong {
+    color: var(--white);
+    font-weight: 500;
+}
+
+/* CTAs */
+.ctas {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.65rem 1.4rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    border: none;
+}
+
+.btnPrimary {
+    background: var(--white);
+    color: var(--bg);
+}
+.btnPrimary:hover {
+    background: var(--accent);
+}
+
+.btnOutline {
+    background: transparent;
+    color: var(--body);
+    border: 1px solid var(--border2);
+}
+.btnOutline:hover {
+    border-color: var(--white);
+    color: var(--white);
+}
+
+/* Languages */
+.langs {
+    display: flex;
+    gap: 0;
+}
+
+.langs span {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-right: 1.25rem;
+    margin-right: 1.25rem;
+    border-right: 1px solid var(--border);
+}
+
+.langs span:last-child {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+/* ── Stats grid ── */
+.statsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.stat {
+    padding: 1.5rem 1.75rem;
+    border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+}
+
+.stat:nth-child(even) {
+    border-right: none;
+}
+.stat:nth-child(3),
+.stat:nth-child(4) {
+    border-bottom: none;
+}
+
+.statNum {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--amber);
+    letter-spacing: -0.01em;
+    line-height: 1;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.statLbl {
+    font-size: 0.75rem;
+    color: var(--muted);
+    line-height: 1.4;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+    .nameRow {
+        grid-template-columns: 1fr 260px;
+    }
+    .bottomRow {
+        grid-template-columns: 1fr 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nameRow {
+        grid-template-columns: 1fr;
+    }
+    .nameBlock {
+        padding: 3rem 1.5rem 2rem;
+        border-right: none;
+    }
+    .photoWrap {
+        height: 320px;
+        border-top: 1px solid var(--border);
+    }
+    .bottomRow {
+        grid-template-columns: 1fr;
+    }
+    .bioCol {
+        padding: 2rem 1.5rem;
+        border-right: none;
+    }
+    .statsGrid {
+        border-top: 1px solid var(--border);
+    }
+    .stat {
+        border-right: 1px solid var(--border) !important;
+    }
+    .stat:nth-child(even) {
+        border-right: none !important;
+    }
+}

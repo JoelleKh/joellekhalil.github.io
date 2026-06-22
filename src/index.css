@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Inter:wght@400;500;600&display=swap");
+
+/* ── Dark mode (default) — deep dark gray, not pure black ── */
+:root,
+[data-theme="dark"] {
+    /* Your originals — keep as-is */
+    --bg: #202226;
+    --bg2: #203336;
+    --bg3: #1f1f1f;
+
+    /* New companions in the same blue-gray/teal family */
+    --bg-card: #2a2e32; /* elevated cards */
+    --bg-hover: #252d30; /* hover backgrounds */
+    --bg-deep: #181c1f; /* footer / sunken areas */
+
+    /* Text — vivid and high-contrast */
+    --white: #eef0f2; /* headings (cool off-white, not warm) */
+    --body: #c2cad1; /* body copy — teal-tinted for harmony */
+    --dim: #8a9499; /* subdued labels */
+    --muted: #fff; /* meta, placeholders */
+
+    /* Borders — teal-tinted to stay in family */
+    --border: rgba(174, 192, 196, 0.12);
+    --border2: rgba(174, 192, 196, 0.28);
+
+    /* Amber stays */
+    --amber: #c8a86e;
+    --accent: #c8a86e;
+    --accent-bg: rgba(200, 168, 110, 0.12);
+    --accent-border: rgba(200, 168, 110, 0.4);
+}
+
+/* ── Light mode ── */
+[data-theme="light"] {
+    /* Backgrounds */
+    --bg: #f5f4f1;
+    --bg2: #eceae5;
+    --bg3: #e2e0da;
+
+    /* Borders */
+    --border: rgba(0, 0, 0, 0.1);
+    --border2: rgba(0, 0, 0, 0.28);
+
+    /* Text */
+    --white: #1a1a1a; /* headings */
+    --body: #1a1a1a; /* body copy */
+    --dim: #5a5a5a; /* subdued */
+    --muted: #000; /* meta */
+
+    /* Accent */
+    --amber: #9b7a3a;
+    --accent: #9b7a3a;
+    --accent-bg: rgba(155, 122, 58, 0.1);
+    --accent-border: rgba(155, 122, 58, 0.4);
+
+    /* Misc */
+    --shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+    --social-bg: #e2e0da;
+    --text-h: #1a1a1a;
+}
+
+/* ── Reset & base ── */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--bg);
+    color: var(--body);
+    -webkit-font-smoothing: antialiased;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--white);
+}
+
+img,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}

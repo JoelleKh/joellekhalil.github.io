@@ -18,15 +18,15 @@ export default function About() {
             </p>
             <p>
               What sets my profile apart is the depth across the full stack. I understand computer
-              vision from first principles — from classical algorithms and event-based techniques to
-              deep learning with PyTorch and TensorFlow — and I take those systems all the way down
+              vision from first principles; from classical algorithms and event-based techniques to
+              deep learning with PyTorch and TensorFlow and I take those systems all the way down
               to <strong>bare-metal embedded hardware</strong>. I deployed a neural network on a
               $15 STM32 microcontroller achieving 58ms inference entirely on-chip, with no GPU and
               no remote server.
             </p>
             <p>
               I am currently deepening my expertise in production embedded firmware at{' '}
-              <strong>Beyond Silicon Solutions</strong> — mastering the hardware layer at the
+              <strong>Beyond Silicon Solutions</strong>, mastering the hardware layer at the
               silicon level through cryptographic protocols, optical transceiver firmware, and
               low-level embedded systems engineering.
             </p>

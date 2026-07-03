@@ -9,9 +9,9 @@ const jobs = [
     location: 'Beirut, Lebanon',
     now: true,
     points: [
-      'Joined to pursue deep expertise in production embedded systems — low-level firmware, hardware protocols, and cryptographic security at the silicon level',
+      'Joined to pursue deep expertise in production embedded systems; low-level firmware, hardware protocols, and cryptographic security at the silicon level',
       'Developed firmware for proprietary high-speed optical transceivers (SFP+ and QSFP) including OTN management, MACsec secure communication, and OIF-compliant interfaces (CMIS, SFF-8436)',
-      'Implemented cryptographic modules: AES-CMAC, KDF, RFC 3394 — across 2 hardware platforms',
+      'Implemented cryptographic modules: AES-CMAC, KDF, RFC 3394, across 2 hardware platforms',
       'Conducted 10G optical testing and provided on-site technical support in the Netherlands',
     ],
   },
@@ -22,10 +22,10 @@ const jobs = [
     location: 'Lebanon / Rochester, USA',
     now: false,
     points: [
-      'Promoted to Lead Research Engineer within 2 years — driving R&D direction, university collaborations, and academic visibility',
-      'Led 3 international R&D collaborations (University of Zurich, AUB, LAU) — mentoring 18 people across final-year projects and internships, and collaborating with 1 PhD student on SPU-related CV work',
+      'Promoted to Lead Research Engineer within 2 years; driving R&D direction, university collaborations, and academic visibility',
+      'Led 3 international R&D collaborations (University of Zurich, AUB, LAU), mentoring 18 people across final-year projects and internships, and collaborating with 1 PhD student on SPU-related CV work',
       'Supervised Visual Odometry, stereo SLAM, and wildlife detection systems using event-based sensors',
-      '4th place out of 29 global teams — TinyML Hackathon 2023, Vision Zero, City of San José',
+      '4th place out of 29 global teams, TinyML Hackathon 2023, Vision Zero, City of San José',
     ],
   },
   {
@@ -35,7 +35,7 @@ const jobs = [
     location: 'Lebanon / Rochester, USA',
     now: false,
     points: [
-      'Founding team member — contributed to core product architecture, sensor evaluation, and customer-facing demos from day one',
+      'Founding team member; contributed to core product architecture, sensor evaluation, and customer-facing demos from day one',
       "Developed and benchmarked real-time CV and ML pipelines using event-based sensors, spanning classical CV, deep learning (PyTorch, TensorFlow), and algorithms optimised for Oculi's proprietary SPU architecture",
       'Designed FPGA sensor pipelines (VHDL, MIPI) and worked with HD cameras, DVS, LiDAR, stereo, and thermal sensors; implemented NUC and pixel correction pipelines',
       'Cross-compiled and deployed C++ vision applications on Linux and PetaLinux via CMake',

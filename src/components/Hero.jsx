@@ -35,7 +35,7 @@ export default function Hero() {
           <p className={styles.title}>
             <strong>Senior Computer Vision &amp; Embedded AI Engineer.</strong>{' '}
             Founding-team engineer with 5+ years shipping real-time vision
-            systems, edge AI pipelines, and embedded hardware solutions — from
+            systems, edge AI pipelines, and embedded hardware solutions from
             first prototype to production deployment.
           </p>
           <div className={styles.ctas}>
